@@ -1,0 +1,390 @@
+[
+  {
+    "visibility": "Public",
+    "_id": "mGh_sW5OS",
+    "name": "Childish syringa copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "601afac0e7d743f9f9a3de35",
+          "601afac0e7d743f9f9a3de36",
+          "601afac0e7d743f9f9a3de37"
+        ],
+        "fileType": "folder",
+        "_id": "601afac0e7d743f9f9a3de34",
+        "createdAt": "2021-02-03T21:24:45.991Z",
+        "updatedAt": "2021-02-03T21:24:45.991Z",
+        "id": "601afac0e7d743f9f9a3de34"
+      },
+      {
+        "name": "sketch.js",
+        "content": "class Coin{\n  constructor() {\n    this.radius = 0;\n    this.xposition = 0;\n    this.yposition = 0;\n  }\n  display() {\n    circle(this.xposition, this.yposition, this.radius);\n  }\n}\n  \nvar smallCoin = new Coin();\nvar mediumCoin = new Coin();\nvar largeCoin = new Coin();\n\nfunction setup() {\n  createCanvas(400,400);\n}\n\nfunction draw() {\n  background(\"white\");\n  smallCoin.xposition = 100;\n  smallCoin.yposition = 100;\n  smallCoin.radius = 20;\n  smallCoin.display();\n  \n  mediumCoin.xposition = 200;\n  mediumCoin.yposition = 200;\n  mediumCoin.radius = 60;\n  mediumCoin.display();\n  \n  largeCoin.xposition = 300;\n  largeCoin.yposition = 300;\n  largeCoin.radius = 100;\n  largeCoin.display();\n  \n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "601afac0e7d743f9f9a3de36",
+        "isSelectedFile": true,
+        "createdAt": "2021-02-03T21:24:45.991Z",
+        "updatedAt": "2021-02-03T21:24:45.991Z",
+        "id": "601afac0e7d743f9f9a3de36"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601afac0e7d743f9f9a3de35",
+        "createdAt": "2021-02-03T21:24:45.991Z",
+        "updatedAt": "2021-02-03T21:24:45.991Z",
+        "id": "601afac0e7d743f9f9a3de35"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601afac0e7d743f9f9a3de37",
+        "createdAt": "2021-02-03T21:24:45.991Z",
+        "updatedAt": "2021-02-03T21:24:45.991Z",
+        "id": "601afac0e7d743f9f9a3de37"
+      }
+    ],
+    "createdAt": "2021-02-03T19:34:24.575Z",
+    "updatedAt": "2021-02-03T21:24:45.991Z",
+    "id": "mGh_sW5OS"
+  },
+  {
+    "visibility": "Public",
+    "_id": "y36bQOjym",
+    "name": "Pong game Student Activity 1.5 copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "601879efee4d5557e31ec0a9",
+          "601879efee4d5557e31ec0aa",
+          "601879efee4d5557e31ec0ab",
+          "601879efee4d5557e31ec0ac",
+          "601879efee4d5557e31ec0ad"
+        ],
+        "fileType": "folder",
+        "_id": "601879efee4d5557e31ec0a8",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-01T22:00:29.221Z",
+        "updatedAt": "2021-02-01T22:00:29.221Z",
+        "id": "601879efee4d5557e31ec0a8"
+      },
+      {
+        "name": "sketch.js",
+        "content": "var playerPaddle;\nvar computerPaddle;\n\n\nfunction setup(){\n  createCanvas(400,400);\n  //player Paddle\n  playerPaddle = new Paddle();\n  computerPaddle = new Paddle();\n}\n\nfunction draw() {\n  //set background to white\n  background(\"white\");\n  \n  playerPaddle.xPosition = 390;\n  playerPaddle.yPosition = mouseY;\n  \n  playerPaddle.display();\n  \n  computerPaddle.xPosition = 0;\n  computerPaddle.yPosition = 185;\n  \n  computerPaddle.display();\n  \n  //draw the ball\n  rect(200,200,10,10);\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "601879efee4d5557e31ec0ac",
+        "isSelectedFile": true,
+        "createdAt": "2021-02-01T22:00:29.221Z",
+        "updatedAt": "2021-02-01T22:00:29.221Z",
+        "id": "601879efee4d5557e31ec0ac"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n   <script src=\"p5.play.js\"></script>\n  </head>\n  <body>\n      \n    <script src=\"Paddle.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601879efee4d5557e31ec0aa",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-01T22:00:29.221Z",
+        "updatedAt": "2021-02-01T22:00:29.221Z",
+        "id": "601879efee4d5557e31ec0aa"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601879efee4d5557e31ec0ad",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-01T22:00:29.221Z",
+        "updatedAt": "2021-02-01T22:00:29.221Z",
+        "id": "601879efee4d5557e31ec0ad"
+      },
+      {
+        "name": "p5.play.js",
+        "content": "",
+        "children": [],
+        "fileType": "file",
+        "_id": "601879efee4d5557e31ec0ab",
+        "url": "https://assets.editor.p5js.org/601877fea0fcbd0020838ca8/021b6206-be80-4cd9-97e3-04aebfcbeb32.js",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-01T22:00:29.221Z",
+        "updatedAt": "2021-02-01T22:00:29.221Z",
+        "id": "601879efee4d5557e31ec0ab"
+      },
+      {
+        "name": "Paddle.js",
+        "content": "class Paddle {\n  \n  constructor(){\n    this.width = 10;\n    this.height = 70;\n    this.xPosition = 0;\n    this.yPosition= 0;\n  }\n  \n  \n  display(){\n    rect(this.xPosition, this.yPosition, this.width, this.height);\n  }\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "601879efee4d5557e31ec0a9",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-01T22:00:29.221Z",
+        "updatedAt": "2021-02-01T22:00:29.221Z",
+        "id": "601879efee4d5557e31ec0a9"
+      }
+    ],
+    "createdAt": "2021-02-01T22:00:16.750Z",
+    "updatedAt": "2021-02-01T22:00:29.221Z",
+    "id": "y36bQOjym"
+  },
+  {
+    "visibility": "Public",
+    "_id": "n2UBFlX1f",
+    "name": "Project 1",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "601af8891fb9692e0bd5bdcb",
+          "601af8891fb9692e0bd5bdcc",
+          "601af8891fb9692e0bd5bdcd"
+        ],
+        "fileType": "folder",
+        "_id": "601af8891fb9692e0bd5bdca",
+        "createdAt": "2021-02-03T19:26:59.319Z",
+        "updatedAt": "2021-02-03T19:26:59.319Z",
+        "id": "601af8891fb9692e0bd5bdca"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "601af8891fb9692e0bd5bdcc",
+        "isSelectedFile": true,
+        "createdAt": "2021-02-03T19:26:59.319Z",
+        "updatedAt": "2021-02-03T19:26:59.319Z",
+        "id": "601af8891fb9692e0bd5bdcc"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601af8891fb9692e0bd5bdcb",
+        "createdAt": "2021-02-03T19:26:59.319Z",
+        "updatedAt": "2021-02-03T19:26:59.319Z",
+        "id": "601af8891fb9692e0bd5bdcb"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601af8891fb9692e0bd5bdcd",
+        "createdAt": "2021-02-03T19:26:59.319Z",
+        "updatedAt": "2021-02-03T19:26:59.319Z",
+        "id": "601af8891fb9692e0bd5bdcd"
+      }
+    ],
+    "createdAt": "2021-02-03T19:24:57.615Z",
+    "updatedAt": "2021-02-03T19:26:59.319Z",
+    "id": "n2UBFlX1f"
+  },
+  {
+    "visibility": "Public",
+    "_id": "jXMUqfKvN",
+    "name": "Project 1",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "601b004d98f0731af6fbe165",
+          "601b0747d9e5cc00205b86b8",
+          "601b004d98f0731af6fbe166",
+          "601b004d98f0731af6fbe167",
+          "601b004d98f0731af6fbe168"
+        ],
+        "fileType": "folder",
+        "_id": "601b004d98f0731af6fbe164",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-03T21:04:16.716Z",
+        "updatedAt": "2021-02-03T21:04:16.716Z",
+        "id": "601b004d98f0731af6fbe164"
+      },
+      {
+        "name": "sketch.js",
+        "content": "var b1,b2,b3,b4,b5,b6,b7,b8;\n\nfunction setup() {\n  createCanvas(400, 400);\n  b1=new Building()\n  b1.position=1;\n  b1.floors=20;\n  \n  b2=new Building()\n  b2.position=2;\n  b2.floors=26;\n\n  b3=new Building()\n  b3.position=3;\n  b3.floors=33;\n\n  b4=new Building()\n  b4.position=4;\n  b4.floors=23;\n\n  b5=new Building()\n  b5.position=7;\n  b5.floors=17;\n\n  b6=new Building()\n  b6.position=8;\n  b6.floors=25;\n\n  b7=new Building()\n  b7.position=9;\n  b7.floors=36;\n  \n  //garden\n  b8=new Building()\n  b8.floors=1\n  b8.position = 5;    \n  b8.yPosition = 380;\n  b8.width = 70;\n\n}\n\nfunction draw() {\n  background(0);\n  b1.display();\n  b2.display();\n  b3.display();\n  b4.display();\n  b5.display();\n  b6.display();\n  b7.display();\n  \n  //garden\n  b8.display();\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601b004d98f0731af6fbe167",
+        "isSelectedFile": true,
+        "createdAt": "2021-02-03T21:04:16.716Z",
+        "updatedAt": "2021-02-03T21:04:16.716Z",
+        "id": "601b004d98f0731af6fbe167"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n    <script src=\"Building.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601b004d98f0731af6fbe166",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-03T21:04:16.716Z",
+        "updatedAt": "2021-02-03T21:04:16.716Z",
+        "id": "601b004d98f0731af6fbe166"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601b004d98f0731af6fbe168",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-03T21:04:16.716Z",
+        "updatedAt": "2021-02-03T21:04:16.716Z",
+        "id": "601b004d98f0731af6fbe168"
+      },
+      {
+        "name": "Building.js",
+        "content": "class Building{\n  constructor()\n  {\n    this.height=10;\n    this.position=1;    \n    this.yPosition=390;\n    this.width=25;\n    this.floors=10;\n    \n    //Each floor is approximately equal to 12 feet\n    //If a building has 3 floors it would be 3*12=36 feet high.\n    this.building_height=this.floors*12;\n    \n  }  \n  display()\n  {\n   this.height=this.floors*8;\n   this.yPosition=395-(this.height);\n    //this.xPosition=395-(this.height);\n   this.xPosition=this.position*40;\n   rect(this.xPosition,this.yPosition, this.width, this.height); \n  }  \n  \n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601b004d98f0731af6fbe165",
+        "isSelectedFile": false,
+        "createdAt": "2021-02-03T21:04:16.716Z",
+        "updatedAt": "2021-02-03T21:04:16.716Z",
+        "id": "601b004d98f0731af6fbe165"
+      },
+      {
+        "name": "Garden.js",
+        "content": "//garden\nclass Building{\n  constructor() \n  {\n    b8.height = 10;\n    b8.xPosition = 0;    \n    b8.yPosition = 0;\n    b8.width = 75;\n    \n  }  \n    display() {\n      b8(this.xPosition, this.yPosition, this.width, this.height);\n    }\n}\n\nvar b8;\n  ",
+        "children": [],
+        "fileType": "file",
+        "_id": "601b0747d9e5cc00205b86b8",
+        "isSelectedFile": false,
+        "updatedAt": "2021-02-03T21:04:16.716Z",
+        "createdAt": "2021-02-03T21:04:16.716Z",
+        "id": "601b0747d9e5cc00205b86b8"
+      }
+    ],
+    "createdAt": "2021-02-03T19:58:05.082Z",
+    "updatedAt": "2021-02-03T21:04:16.716Z",
+    "id": "jXMUqfKvN"
+  },
+  {
+    "visibility": "Public",
+    "_id": "NRoYUHnH-",
+    "name": "Rowan nape",
+    "updatedAt": "2021-02-03T19:24:53.838Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "601af86b1fb9692e0bd5bdc7",
+          "601af86b1fb9692e0bd5bdc6",
+          "601af86b1fb9692e0bd5bdc8"
+        ],
+        "fileType": "folder",
+        "_id": "601af86b1fb9692e0bd5bdc9",
+        "createdAt": "2021-02-03T19:24:53.838Z",
+        "updatedAt": "2021-02-03T19:24:53.838Z",
+        "id": "601af86b1fb9692e0bd5bdc9"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "601af86b1fb9692e0bd5bdc6",
+        "isSelectedFile": true,
+        "createdAt": "2021-02-03T19:24:53.838Z",
+        "updatedAt": "2021-02-03T19:24:53.838Z",
+        "id": "601af86b1fb9692e0bd5bdc6"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601af86b1fb9692e0bd5bdc7",
+        "createdAt": "2021-02-03T19:24:53.838Z",
+        "updatedAt": "2021-02-03T19:24:53.838Z",
+        "id": "601af86b1fb9692e0bd5bdc7"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601af86b1fb9692e0bd5bdc8",
+        "createdAt": "2021-02-03T19:24:53.838Z",
+        "updatedAt": "2021-02-03T19:24:53.838Z",
+        "id": "601af86b1fb9692e0bd5bdc8"
+      }
+    ],
+    "createdAt": "2021-02-03T19:24:53.838Z",
+    "id": "NRoYUHnH-"
+  },
+  {
+    "visibility": "Public",
+    "_id": "43JjDpe1x",
+    "name": "Typical blinker copy copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "601b149391391cadf546b2da",
+          "601b149391391cadf546b2db",
+          "601b149391391cadf546b2dc"
+        ],
+        "fileType": "folder",
+        "_id": "601b149391391cadf546b2d9",
+        "createdAt": "2020-07-25T07:05:52.652Z",
+        "updatedAt": "2020-07-25T07:05:52.652Z",
+        "isSelectedFile": false,
+        "id": "601b149391391cadf546b2d9"
+      },
+      {
+        "name": "sketch.js",
+        "content": "class Block {\n constructor() {\n   this.width = 100;\n   this.height = 100;\n   this.xPosition = 0;\n   this.yPosition = 0;\n }\n  display() {\n   rect(this.xPosition, this.yPosition, this.width, this.height); \n  }\n}\n\nvar b1, b2, b3, b4;\n\nfunction setup() {\n  createCanvas(400, 400);\n}\n\n\nfunction draw() {\n  background(\"black\");\n  \n  b1 = new Block();\n  b1.xPosition = 0;\n  b1.yPosition = 0;\n  b1.display();\n  \n  b2 = new Block();\n  b2.xPosition = 100;\n  b2.yPosition = 100;\n  b2.display();\n  \n  b3 = new Block();\n  b3.xPosition = 200;\n  b3.yPosition = 200;\n  b3.display();\n  \n  b4 = new Block();\n  b4.xPosition = 300;\n  b4.yPosition = 300;\n  b4.display();\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "601b149391391cadf546b2db",
+        "isSelectedFile": false,
+        "createdAt": "2020-07-25T07:05:52.652Z",
+        "updatedAt": "2020-07-25T07:05:52.652Z",
+        "id": "601b149391391cadf546b2db"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601b149391391cadf546b2da",
+        "createdAt": "2020-07-25T07:05:52.652Z",
+        "updatedAt": "2020-07-25T07:05:52.652Z",
+        "isSelectedFile": false,
+        "id": "601b149391391cadf546b2da"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "601b149391391cadf546b2dc",
+        "createdAt": "2020-07-25T07:05:52.652Z",
+        "updatedAt": "2020-07-25T07:05:52.652Z",
+        "isSelectedFile": true,
+        "id": "601b149391391cadf546b2dc"
+      }
+    ],
+    "createdAt": "2021-02-03T21:24:35.252Z",
+    "updatedAt": "2021-02-03T21:24:35.252Z",
+    "id": "43JjDpe1x"
+  }
+]
